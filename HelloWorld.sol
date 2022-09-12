@@ -4,14 +4,13 @@ pragma solidity >= 0.8.0;
 
 contract HelloWorld {
 
-
   string public message;
 
   constructor(string memory firstmessage) {
 
     message = firstmessage;
   }
-  function update() public {
-    message = "Hello World";
+  function update(string memory _message) public {
+    message = _message;
   }
 }
